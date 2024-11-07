@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(161, 100, 223);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.prev-proj {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  color: lightgray;
+  cursor: pointer;
+  z-index: 1;
+}
+.next-proj {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  color: lightgray;
+  cursor: pointer;
+  z-index: 1;
+}
+.prev-proj:hover,
+.next-proj:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  width: 150px;
+  background-color: rebeccapurple;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  margin: 1rem;
+  padding: 1.5rem 3rem;
+  font-size: 1.2rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.drum {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  font-size: 60px;
+  border-radius: 10px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  margin: 15px;
+  color: violet;
+}
+
+.drum::before {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  content: "";
+  width: 140px;
+  height: 140px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.drum:hover {
+  opacity: 0.8;
+}
+
+.active {
+  opacity: 0.8;
+}
